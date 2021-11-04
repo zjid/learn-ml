@@ -3,17 +3,20 @@ import numpy as np
 from numpy.random import randint
 from context import port
 
+# print(port.jendela.skala)
+
 judul = 'bakteri'
 sisi = 60
+luas = sisi * sisi
 
-port.skala(judul, [600,600])
+port.jendela.skala(judul, [600,600])
 dasar = np.zeros([sisi, sisi], np.uint8)
 
 class sel:
   def __init__(self, y = -1, x = -1, warna = -1):
     if y < 0 or y >= sisi: y = randint(sisi)
     if x < 0 or x >= sisi: x = randint(sisi)
-    if warna < 1 or warna > 255: warna = randint(1, 256)
+    if warna < 1 or warna > 255: warna = randint(10, 256)
     self.hidup = [ [y,x] ]
     self.mati = []
     self.anggota = self.hidup + self.mati
@@ -48,6 +51,7 @@ while True:
     cawan[y,x] = bakteri.warna
 
   cv2.imshow(judul, cawan)
+  cv2.displayStatusBar(judul, f'Sel {len(bakteri.anggota)}/{luas}')
 
   bakteri.tumbuh()
 
