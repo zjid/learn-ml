@@ -1,10 +1,8 @@
-Sample Module Repository
+Learn ML Repository
 ========================
 
-This simple project is an example repo for Python projects.
-
-`Learn more <http://www.kennethreitz.org/essays/repository-structure-and-python>`_.
+Every small concept written inside a single file in folder ``concept``.
+Local modules located in folder ``port``.
 
 ---------------
 
-If you want to learn more about ``setup.py`` files, check out `this repository <https://github.com/kennethreitz/setup.py>`_.
