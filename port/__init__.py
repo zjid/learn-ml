@@ -1,1 +1,1 @@
-from .core import hmm
+from .jendela import skala
