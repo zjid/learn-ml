@@ -91,3 +91,8 @@ ENV/
 
 # vscode
 .vscode/
+
+# images
+*.png
+*.jpg
+*.jpeg
