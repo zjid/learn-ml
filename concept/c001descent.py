@@ -3,27 +3,27 @@
 
 import random
 
-def cari_minimum(cost, steps = 20, rate = 0.1, xrange = [-10, 10]):
-  '''Return x for minimum cost(x) given number of steps and learning rate.'''
+def cari_minimum(costf, steps = 20, rate = 0.1, xrange = [-10, 10]):
+  '''Return x and minimum costf(x) given number of steps and learning rate.'''
   x = random.randint(xrange[0], xrange[1])
-  cx = cost(x)
-  print(f'Started with x={x} and cost={cx}')
+  cx = costf(x)
+  print(f'Started with x = {x} and cost = {cx}')
 
   # Every step contains (x, cost(x), d_x, d_cost)
-  lacak = [(x, cost(x), 0, 0)]
+  lacak = [(x, cx, 0, 0)]
 
   def gradiencx(x, r = rate, kiri = True):
     '''A simple gradient calculator'''
-    tengah = cost(x)
+    tengah = costf(x)
     if kiri:
-      return (tengah - cost(x - r)) / r
+      return (tengah - costf(x - r)) / r
     else:
-      return (cost(x + r) - tengah) / r
+      return (costf(x + r) - tengah) / r
 
   # Put every step inside lacak (tracker)
   for i in range(steps):
     x = lacak[i][0] - rate * gradiencx(lacak[i][0])
-    cx = cost(x)
+    cx = costf(x)
     dx = x - lacak[i][0]
     dc = cx - lacak[i][1]
     lacak.append((x, cx, dx, dc))
@@ -42,4 +42,4 @@ def f_contoh(x):
   if 3 <= x: return x - 4
 
 x, cost, track = cari_minimum(f_contoh, 100)
-print(x, cost)
+print('Ended with x = {0:.2f} and cost = {1:.2f}'.format(x, cost))

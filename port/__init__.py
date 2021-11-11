@@ -1,2 +1,4 @@
-# from .jendela import skala
-from . import jendela
+try: from . import jendela
+except: pass
+try: from . import network
+except: pass
