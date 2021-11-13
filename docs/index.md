@@ -17,14 +17,14 @@ I have experience as a kid for years. (I am qualified as a human being.)
 Back then, twelve times twelve equal(ed) to one hundred and four.
 The answer felt right and intuitive, element-wise.
 Using different notations, the answer **may** be true.
-(For you who don't know, the real answer is ``144.0`` and the complex answer is ``144.0 + j0.0``.)
+(For curious person, the real answer is ``144.0`` and the complex answer is ``144.0 + j0.0``.)
 To get the right answer, my teacher taught me something like
 
 ``[10, 2] * [10, 2]T + [10, 2] * [2, 10]T = 104 + 40 = 144``
 
 or
 
-``sum of convolution( [10, 2], [10, 2] ) = sum of [4, 40, 100] = 144``.
+``sum of convolution( [2, 10], [2, 10] ) = sum of [4, 40, 100] = 144``.
 
 (Put the answer on the left side and I'll get the left answer.)
 
@@ -41,5 +41,6 @@ Can maths emerge from a few comparators?
 (Well, binary system is the result from comparators.
 And I wrote this blablabla in a machine called digital computer.)
 Is TPU something like this?
+Am I lost?
 
 Hey, Captain!
