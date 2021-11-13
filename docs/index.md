@@ -19,8 +19,8 @@ The answer felt right and intuitive, element-wise.
 Using different notations, the answer **may** be true.
 (For you who don't know, the real answer is 144.0 and the complex answer is 144.0 + j0.0.)
 To get the right answer, my teacher taught me something like
-[10, 2] * [10, 2]T + [10, 2] * [2, 10]T = 104 + 40 = 144.
-Or sum of convolution( [10, 2], [10, 2] ) = sum of [4, 40, 100] = 144.
+``[10, 2] * [10, 2]T + [10, 2] * [2, 10]T = 104 + 40 = 144``.
+Or ``sum of convolution( [10, 2], [10, 2] ) = sum of [4, 40, 100] = 144``.
 (Put the answer on the left side and I'll get the left answer.)
 Not really.
 My teacher gave me an example by drawing columns and rows of circles and counting them.
