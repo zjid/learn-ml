@@ -96,3 +96,6 @@ ENV/
 *.png
 *.jpg
 *.jpeg
+
+# github
+.github/

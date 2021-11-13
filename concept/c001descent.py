@@ -28,7 +28,9 @@ def cari_minimum(costf, steps = 20, rate = 0.1, xrange = [-10, 10]):
     dc = cx - lacak[i][1]
     lacak.append((x, cx, dx, dc))
 
-  return x, cx, lacak
+  print('Ended with x = {0:.2f} and cost = {1:.2f}'.format(x, cx))
+
+  return lacak
 
 def f_kuadrat(x):
   '''Return power of 2 of x, minimum at x = 0'''
@@ -41,5 +43,4 @@ def f_contoh(x):
   if 2 <= x < 3: return (x - 4) ** 2 - 2
   if 3 <= x: return x - 4
 
-x, cost, track = cari_minimum(f_contoh, 100)
-print('Ended with x = {0:.2f} and cost = {1:.2f}'.format(x, cost))
+cari_minimum(f_contoh, 100)
