@@ -1,37 +1,38 @@
-## Welcome to Random Page
+## How does the machine learn?
 
-You can use the [editor on GitHub](https://github.com/zjid/learn-ml/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+So far I know, the machine needs these minimum requirements:
+- ability to do mathematical operations
+- procedure to update parameters itself
+- resources to store and run multiple operation unit
+- data input and feedback
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Pseudo-
 
-### Markdown
+Machines nowadays can do sophisticated mathematical operations in a short time.
+The signals are smooth enough given floating points handling and a few bits for depth.
+The calculations feel limitless, almost no overflow.
+Although they seem natural for me, do they for machines themselves?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I have experience as a kid for years. (I am qualified as a human being.)
+Back then, twelve times twelve equal(ed) to one hundred and four.
+The answer felt right and intuitive, element-wise.
+Using different notations, the answer **may** be true.
+(For you who don't know, the real answer is 144.0 and the complex answer is 144.0 + j0.0.)
+To get the right answer, my teacher taught me something like
+[10, 2] * [10, 2]T + [10, 2] * [2, 10]T = 104 + 40 = 144.
+Or sum of convolution( [10, 2], [10, 2] ) = sum of [4, 40, 100] = 144.
+(Put the answer on the left side and I'll get the left answer.)
+Not really.
+My teacher gave me an example by drawing columns and rows of circles and counting them.
+My teacher sliced the columns and rows to show the process.
 
-```markdown
-Syntax highlighted code block
+(I skip the understanding of multiplications, additions, etc.)
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zjid/learn-ml/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+So,
+I guess, the smallest unit of the machine (the neuron) not necessarily perform maths.
+Can a machine with learning ability be built purely from comparator neurons?
+Can maths emerge from a few comparators?
+(Well, binary system is the result from comparators.
+And I wrote this blablabla in a machine called digital computer.
+Is TPU something like this?)
+Hey, Captain!
